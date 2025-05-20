@@ -278,11 +278,11 @@ header {
   font-size: 1.1em;
 }
 
-.about-video {
+.about-image {
   text-align: center;
 }
 
-.about-video video {
+.about-image img {
   width: 100%;
   max-width: 800px;
   border-radius: 10px;
