@@ -707,17 +707,44 @@ footer {
   background-color: #222;
   color: white;
   text-align: center;
-  padding: 20px 0;
-  position: fixed;
-  bottom: 0;
+  padding: 20px 15px;
   width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer p {
   margin: 0;
   font-size: 16px;
+  max-width: 90%;
+  word-wrap: break-word;
 }
 
+/* Footer responsive styles */
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 15px 10px;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  footer {
+    padding: 12px 8px;
+  }
+  
+  footer p {
+    font-size: 13px;
+  }
+}
 
 body.dark-mode {
   background-color: #121212;
